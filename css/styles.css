@@ -337,7 +337,7 @@ img {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)
             ),
-            url(../images/people-office.jpg);
+            url(../images/people-office-tab.jpg);
     }
 
     .hero-title {
@@ -392,14 +392,6 @@ img {
 
 .icon-wrapper {
     display: none;
-    /* align-items: center;
-    justify-content: center;
-    height: 112px;
-    width: 100%;
-    background-color: #f4f4fd;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    margin-bottom: 8px; */
 }
 
 .advantages-list-item-title {
@@ -471,7 +463,8 @@ img {
 
 .team {
     background-color: #f4f4fd;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .team-title {
@@ -487,12 +480,14 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-list-item {
     background-color: #fff;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    /* flex-basis: calc((100% - 3 * 24px) / 4); */
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -514,6 +509,8 @@ img {
 }
 
 .team-list-text {
+    font-weight: 400;
+    line-height: 1.5;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -551,6 +548,25 @@ img {
     fill: #f4f4fd;
 }
 
+@media screen and (min-width: 768px) {
+    .team-list {
+        gap: 64px 24px;
+    }
+
+    .team-list-item {
+        display: block;
+
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0;
+    }
+}
 /* ------------------------------------------------ */
 
 /* -------------------- PORTFOLIO ------------------ */
