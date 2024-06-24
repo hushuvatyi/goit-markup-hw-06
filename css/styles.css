@@ -422,10 +422,6 @@ img {
     gap: 72px;
 }
 
-.advantages-list-item {
-    /* width: calc((100% - 72px) / 4); */
-}
-
 .icon-wrapper {
     display: none;
 }
@@ -588,9 +584,6 @@ img {
     .team-list {
         gap: 64px 24px;
     }
-
-    .team-list-item {
-    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -748,9 +741,6 @@ img {
     justify-content: center;
 }
 
-.footer-logo-wrapper {
-    /* margin-right: 120px; */
-}
 .footer-logo {
     display: block;
     font-family: "Raleway", sans-serif;
