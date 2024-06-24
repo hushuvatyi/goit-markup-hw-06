@@ -605,10 +605,6 @@ img {
     overflow: hidden;
 }
 
-.portfolio-list-item-img {
-    /* width: 288px; */
-}
-
 .portfolio-list-item-img-mob {
     width: 288px;
     /* height: 280px; */
@@ -704,19 +700,23 @@ img {
 /* ----------------- FOOTER --------------------- */
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    /* align-items: baseline; */
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo-wrapper {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 .footer-logo {
-    display: inline-block;
+    display: block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -725,6 +725,7 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
 
+    text-align: center;
     margin-bottom: 16px;
 }
 
@@ -733,7 +734,7 @@ img {
 }
 .footer-text {
     color: #f4f4fd;
-    max-width: 264px;
+    /* max-width: 264px; */
 }
 
 .footer-icon-list-text {
@@ -743,6 +744,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    text-align: center;
 }
 
 .footer-icon-list {
@@ -759,7 +761,7 @@ img {
 }
 
 .subscribe-form-container {
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .subscribe-form-container-text {
@@ -769,11 +771,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    text-align: center;
 }
 
 .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
 
 .subscribe-form-input-email {
@@ -816,6 +821,52 @@ img {
 
 .button-icon {
     margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 96px 92px;
+    }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .footer-container {
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
+    .footer-icon-list-text {
+        text-align: left;
+    }
+    .subscribe-form-container-text {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+
+    .footer-text {
+        max-width: 264px;
+        margin-right: 40px;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+        align-items: baseline;
+        gap: 80px;
+    }
+
+    .subscribe-form {
+        flex-wrap: nowrap;
+    }
 }
 
 /* -------------------- MODAL ------------------ */
